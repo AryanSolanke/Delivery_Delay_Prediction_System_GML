@@ -114,3 +114,9 @@ logs/
 # OS files
 Thumbs.db
 Desktop.ini
+
+#others
+dataset.xlsx
+
+# AI session memory (not for version control)
+Documentation/AI_memory.md
