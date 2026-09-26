@@ -106,6 +106,7 @@ dmypy.json
 *.onnx
 *.joblib
 *.h5
+backend/artifacts/*.pkl
 
 # Logs
 *.log
