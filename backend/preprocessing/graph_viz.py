@@ -4,8 +4,9 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import pandas as pd
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ARTIFACTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "artifacts")
+BACKEND_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(BACKEND_ROOT)
+ARTIFACTS_DIR = os.path.join(BACKEND_ROOT, "artifacts")
 VIZ_HOME = os.path.join(ROOT, "evaluations", "graph_vizs")
 
 NODE_TABLE_PATH = os.path.join(ARTIFACTS_DIR, "node_table.csv")

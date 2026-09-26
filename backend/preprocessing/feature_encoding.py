@@ -3,9 +3,10 @@ import os
 
 import pandas as pd
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BACKEND_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(BACKEND_ROOT)
 RAW_DATASET_PATH = os.path.join(ROOT, "Datasets", "raw_dataset", "dataset.csv")
-ARTIFACTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "artifacts")
+ARTIFACTS_DIR = os.path.join(BACKEND_ROOT, "artifacts")
 
 CITY_VOCAB_PATH = os.path.join(ARTIFACTS_DIR, "city_vocab.json")
 STATE_VOCAB_PATH = os.path.join(ARTIFACTS_DIR, "state_vocab.json")

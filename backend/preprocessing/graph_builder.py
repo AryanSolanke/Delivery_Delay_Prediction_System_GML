@@ -6,8 +6,8 @@ import pandas as pd
 import torch
 from sklearn.preprocessing import RobustScaler, StandardScaler
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ARTIFACTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "artifacts")
+BACKEND_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ARTIFACTS_DIR = os.path.join(BACKEND_ROOT, "artifacts")
 
 NODE_TABLE_PATH = os.path.join(ARTIFACTS_DIR, "node_table.csv")
 EDGE_TABLE_PATH = os.path.join(ARTIFACTS_DIR, "edge_table.csv")
